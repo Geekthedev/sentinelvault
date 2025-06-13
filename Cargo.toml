@@ -1,14 +1,14 @@
 [package]
 name = "sentinelvault"
-version = "0.1.0"
-edition = "2021"
+version = "0.1.25"
+edition = "2025"
 description = "A lightweight zero-trust secrets management CLI"
-license = "MIT"
+license = "Open Source"
 authors = ["Joseph Godsown Anointed <anointedgodsownjoseph@gmail.com>"]
 
 
 [[bin]]
-name = "sentinel"
+name = "sentinelvault"
 path = "src/main.rs"
 
 [dependencies]
