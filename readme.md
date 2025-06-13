@@ -261,6 +261,6 @@ This project is Open Source.
 
 ## Disclaimer
 
-SentinelVault is designed for secure local secret storage. While we follow security best practices, please evaluate the tool's suitability for your specific security requirements. The authors are not responsible for any data loss or security breaches.
+SentinelVault is designed for secure local secret storage. While the author follow security best practices, please evaluate the tool's suitability for your specific security requirements. The author is not responsible for any data loss or security breaches.
 
 ---
