@@ -1,0 +1,35 @@
+[package]
+name = "sentinelvault"
+version = "0.1.0"
+edition = "2021"
+description = "A lightweight zero-trust secrets management CLI"
+license = "MIT"
+authors = ["Joseph Godsown Anointed <anointedgodsownjoseph@gmail.com>"]
+
+
+[[bin]]
+name = "sentinel"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+aes-gcm = "0.10"
+rand = "0.8"
+argon2 = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+ron = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+inquire = "0.6"
+anyhow = "1.0"
+dirs = "5.0"
+zeroize = "1.6"
+base64 = "0.21"
+qrcode = { version = "0.14", optional = true }
+
+[dev-dependencies]
+tempfile = "3.8"
+proptest = "1.4"
+
+[features]
+default = []
+qr-backup = ["qrcode"]
